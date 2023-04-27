@@ -13,6 +13,11 @@ main{
 footer {
     justify-content: space-around;
 }
-.detalle{
-    
+
+#modal::backdrop {
+    background: rgba(0, 0, 0, .55);
+}
+
+.filtro{
+    display: none;
 }
