@@ -23,7 +23,9 @@
     <header>
       <nav class="navbar bg-black">
         <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand text-info">Rolling game</a>
+          <a href="../index.html" class="navbar-brand text-info fs-3"
+            >Rolling game</a
+          >
           <form class="d-flex" role="search">
             <input
               class="form-control pe-4 me-2"
@@ -38,60 +40,100 @@
     </header>
     <main class="container">
       <dialog id="modal" class="text-center">
-          <h3 class="text-center">EMPEZA HOY! NO PIERDAS TIEMPO</h3>
-          <a href="https://rollingcode.co/"><img src="/img/anuncioRolling.png"  width="400px"  alt="anuncioRolling"> </a> 
-            <br>
-            <button type="button" class="my-3" id="btnCerrar">cerrar</button>
-          </dialog>
-        <section class="row mt-2">
-              <aside class="col-md-12 col-lg-5 col-12 g-0">
-                <div>
-                  <img
-                    src="../img/hp.jpg"
-                    class="img-fluid rounded-start detalle"
-                    alt="Hogwarts Legacy"
-                  />
-                  <h5 class="card-title mt-3">Hogwarts Legacy</h5>
-                  <p class="card-text">
-                      Hogwarts Legacy es un RPG de acción en un mundo abierto ambientado en el universo de los libros de Harry Potter.<br> Por primera vez, disfruta de Hogwarts en el siglo XIX. Tu personaje es un estudiante que tiene la clave de un antiguo secreto que amenaza con destruir el mundo mágico. Ahora puedes tomar el control de la acción y ser el centro de tu propia aventura en el mundo mágico. La leyenda de Hogwarts<br> es tuya. Crea tu propio legado.
-                  </p>
-              </aside>
-              <aside class="col-md-12 col-lg-5 col-12 g-0 card-body ms-lg-4">
-                </div>
-                    <h5>Jugabilidad: </h5>
-                  <p class="card-text">Hogwarts Legacy es un juego de rol de acción en el que los jugadores pueden asistir a clases en el Colegio Hogwarts de Magia y Hechicería. Los jugadores pueden explorar ubicaciones del Mundo Mágico, como el Bosque Prohibido, el Callejón Diagon y Hogsmeade. Además de otras áreas aún no vistas en otros medios como la Salas Comunes de Hufflepuff y Ravenclaw. Conforme se progresa en el juego, el interior y el exterior del castillo cambian visualmente para coincidir con las estaciones.
-                  Durante la creación del personaje, el jugador puede elegir su apariencia, género y una de las cuatro Casas de Hogwarts. Los jugadores pueden personalizar la voz y el tipo de cuerpo de su personaje y agregar accesorios como anteojos. Un sistema de permite al jugador acceder y mejorar diferentes hechizos, talentos y habilidades. A través de los desafíos del juego, el jugador gana puntos de experiencia para subir de nivel.
-                 </p>
-                 <p>Precio: $22.999 </p>
-                 <button type="button"  class="btn btn-outline-info">Comprar</button>
-              </aside>
+        <h3 class="text-center">EMPEZA HOY! NO PIERDAS TIEMPO</h3>
+        <a href="https://rollingcode.co/"
+          ><img
+            src="/img/anuncioRolling.png"
+            width="400px"
+            alt="anuncioRolling"
+          />
+        </a>
+        <br />
+        <button type="button" class="my-3" id="btnCerrar">cerrar</button>
+      </dialog>
+      <section class="row mt-2">
+        <div class=" object-fit-cover">
+          <img src="../img/portada-hp.jpg" class="d-block w-100" alt="...">
+        </div>
+        <article class="col-md-12 col-lg-6 col-12">
+          <h3 class="card-title mt-3">Hogwarts Legacy</h3>
+          <p class="card-text">
+            Hogwarts Legacy es un RPG de acción en un mundo abierto ambientado
+            en el universo de los libros de Harry Potter.<br />
+            Por primera vez, disfruta de Hogwarts en el siglo XIX. Tu personaje
+            es un estudiante que tiene la clave de un antiguo secreto que
+            amenaza con destruir el mundo mágico. Ahora puedes tomar el control
+            de la acción y ser el centro de tu propia aventura en el mundo
+            mágico. La leyenda de Hogwarts<br />
+            es tuya. Crea tu propio legado.
+          </p>
+        </article>
+        <aside class="col-md-12 col-lg-6 col-sm-12">
+          <h3 class="card-title mt-3">Jugabilidad:</h3>
+          <p class="card-text">
+            Hogwarts Legacy es un juego de rol de acción en el que los jugadores
+            pueden asistir a clases en el Colegio Hogwarts de Magia y
+            Hechicería. Los jugadores pueden explorar ubicaciones del Mundo
+            Mágico, como el Bosque Prohibido, el Callejón Diagon y Hogsmeade.
+            Además de otras áreas aún no vistas en otros medios como la Salas
+            Comunes de Hufflepuff y Ravenclaw. Conforme se progresa en el juego,
+            el interior y el exterior del castillo cambian visualmente para
+            coincidir con las estaciones. A través de los desafíos del juego, el
+            jugador gana puntos de experiencia para subir de nivel.
+          </p>
+          <p>Precio: $22.999</p>
+          <button type="button" class="btn btn-outline-info">Comprar</button>
+        </aside>
+      </section>
+      <section class="container-fluid">
+        <hr />
+        <section class="container mb-5">
+          <form class="row py-4" id="formInputItem">
+            <label for="item">Comentanos tu opinión de este juego: ⬇</label>
+            <div class="col-lg-10 col-md-8 my-2 m-md-0">
+              <input
+                type="text"
+                class="form-control"
+                id="item"
+                minlength="3"
+                maxlength="3000"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <button type="submit" class="btn btn-info w-100">comentar</button>
+            </div>
+          </form>
+          <h3 class="text-center border-bottom border-info p-2">
+            Comentarios de jugadores
+          </h3>
+          <ul>
+            <li>
+              <p>
+                ¡Hola! He jugado a Hogwarts Legacy y debo decir que me ha
+                encantado la experiencia. La atención al detalle en la creación
+                del mundo de Harry Potter es impresionante y la trama del juego
+                es emocionante e intrigante. Los gráficos son impresionantes y
+                el sistema de magia es divertido y satisfactorio. En general, es
+                un gran juego para los fans de la saga de Harry Potter y para
+                los amantes de los juegos de rol en general. ¡Definitivamente lo
+                recomiendo!
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="container-fluid">
-          <hr>
-          <section class="container mb-5">
-            <form class="row" id="formInputItem">
-              <label for="item">Comentanos tu opinión de este juego: ⬇</label>
-              <div class="col-md-10 my-2 m-md-0">
-                <input type="text" class="form-control" id="item" minlength="3" maxlength="3000" required>
-              </div>
-              <div class="col-md-2">
-                <button type="submit" class="btn btn-primary w-100">Agregar</button>
-              </div>
-            </form>
-            <h3 class="text-center">Comentarios de jugadores </h3>
-            <ul>
-              <li><p>¡Hola! He jugado a Hogwarts Legacy y debo decir que me ha encantado la experiencia. La atención al detalle en la creación del mundo de Harry Potter es impresionante y la trama del juego es emocionante e intrigante. Los gráficos son impresionantes y el sistema de magia es divertido y satisfactorio. En general, es un gran juego para los fans de la saga de Harry Potter y para los amantes de los juegos de rol en general. ¡Definitivamente lo recomiendo!</p></li>
-            </ul>
-          </section>
-          <article class="container" id="contenedorLista">
-          </article>
-        </section>
+        <article class="container" id="contenedorLista"></article>
+      </section>
     </main>
     <footer class="bg-black text-bg-dark pt-4">
       <section class="container-fluid text-center justify-content-between">
         <article class="row text-info">
           <aside class="col-12 col-md-4 col-lg-4 mb-2">
-            <img class="w-50" src="../img/rollingfoot.png" alt="footer rolling" />
+            <img
+              class="w-50"
+              src="../img/rollingfoot.png"
+              alt="footer rolling"
+            />
           </aside>
           <aside class="col-12 col-md-4 col-lg-4 mb-2">
             <h5>Preguntas? Llama al 0800 666 3331</h5>
@@ -115,7 +157,7 @@
               href="/pages/acercaDeNosotros.html"
               class="fw-bold text-secondary fs-4"
               >Acerca de nosotros</a
-            > 
+            >
           </aside>
         </article>
       </section>

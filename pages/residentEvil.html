@@ -17,13 +17,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Hogwarts Legacy</title>
+    <title>Resident Evil</title>
   </head>
   <body>
     <header>
       <nav class="navbar bg-black">
         <div class="container-fluid">
-          <a href="../index.html" class="navbar-brand text-info">Rolling game</a>
+          <a href="../index.html" class="navbar-brand text-info fs-3"
+            >Rolling game</a
+          >
           <form class="d-flex" role="search">
             <input
               class="form-control pe-4 me-2"
@@ -39,59 +41,98 @@
     <main class="container-fluid">
       <dialog id="modal" class="text-center">
         <h3 class="text-center">EMPEZA HOY! NO PIERDAS TIEMPO</h3>
-        <a href="https://rollingcode.co/"><img src="/img/anuncioRolling.png"  width="400px"  alt="anuncioRolling"> </a> 
-          <br>
-          <button type="button" class="my-3" id="btnCerrar">cerrar</button>
-        </dialog>
-        <section class="container mt-5 row mx-auto ">
-              <aside class="g-0 col-12 col-md-12 ms-md-5 col-lg-6 ms-lg-0">
-                <div class=" text-center text-md-start">
-                  <img
-                    src="../img/re4.jpg"
-                    class="img-fluid rounded-start "
-                    alt="Hogwarts Legacy"
-                  />
-                </div>
-                </aside>
-                <aside class="col-md-12 col-lg-6 col-12">
-                  <article class="card-body">
-                    <h5 class="card-title">Resident Evil 4</h5>
-                    <p class="card-text">
-                        Es un videojuego de acción-aventura del estilo survival horror. Por primera vez en la serie, el ambiente cerrado y lineal se deja a un lado para incluir escenarios más grandes y dinámicos, debido a que la historia se desarrolla en un poblado de España.4
-                    </p>
-                    <h5>Jugabilidad: </h5>
-                    <p class="card-text">
-                        Lo que más destaca en Resident Evil 4 es la forma de apuntar con las armas, dándole la libertad al jugador de elegir de manera realista a donde se dirigirá su disparo; también incluye nuevos movimientos de defensa en los personajes, como golpear a los enemigos cuando estos bajen la guardia, además estos liberan recompensas al ser derrotados.Además, incluye una gran variedad de minijuegos, entre ellos: The Mercenaries Assignment Ada y Separate Ways el primero es una idea proveniente de Resident Evil 3: Nemesis que contiene un modo de juego similar, el segundo y el tercero son exclusivos de la entrega.
-                   </p>
-                   <p>Precio: $14.500 </p>
-                   <button type="button"  class="btn btn-outline-info">Comprar</button>
-                  </article>
-                </aside>
+        <a href="https://rollingcode.co/"
+          ><img
+            src="/img/anuncioRolling.png"
+            width="400px"
+            alt="anuncioRolling"
+          />
+        </a>
+        <br />
+        <button type="button" class="my-3" id="btnCerrar">cerrar</button>
+      </dialog>
+      <section class="container mt-3 row mx-auto">
+        <div class="object-fit-cover">
+          <img src="../img/portada-re4.jpg" class="d-block w-100" alt="..." />
+        </div>
+
+        <article class="card-body col-md-12 col-lg-6 col-12">
+          <h3 class="card-title mt-3">Resident Evil 4</h3>
+          <p class="card-text">
+            Es un videojuego de acción-aventura del estilo survival horror. Por
+            primera vez en la serie, el ambiente cerrado y lineal se deja a un
+            lado para incluir escenarios más grandes y dinámicos, debido a que
+            la historia se desarrolla en un poblado de España.4
+          </p>
+        </article>
+        <article class="col-md-12 col-lg-6 col-12">
+          <h3 class="card-title mt-3">Jugabilidad:</h3>
+          <p class="card-text">
+            Lo que más destaca en Resident Evil 4 es la forma de apuntar con las
+            armas, dándole la libertad al jugador de elegir de manera realista a
+            donde se dirigirá su disparo; también incluye nuevos movimientos de
+            defensa en los personajes, como golpear a los enemigos cuando estos
+            bajen la guardia, además estos liberan recompensas al ser
+            derrotados.Además, incluye una gran variedad de minijuegos, entre
+            ellos: The Mercenaries Assignment Ada y Separate Ways el primero es
+            una idea proveniente de Resident Evil 3: Nemesis que contiene un
+            modo de juego similar, el segundo y el tercero son exclusivos de la
+            entrega.
+          </p>
+          <p>Precio: $14.500</p>
+          <button type="button" class="btn btn-outline-info">Comprar</button>
+        </article>
+      </section>
+      <section class="container-fluid">
+        <hr />
+        <section class="container mb-5">
+          <form class="row" id="formInputItem">
+            <label for="item">Comentanos tu opinión de este juego: ⬇</label>
+            <div class="col-md-10 my-2 m-md-0">
+              <input
+                type="text"
+                class="form-control"
+                id="item"
+                minlength="3"
+                maxlength="100"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <button type="submit" class="btn btn-info w-100">
+                comentar
+              </button>
+            </div>
+          </form>
+          <h3 class="text-center  border-bottom border-info p-2">Comentarios de jugadores</h3>
+          <ul>
+            <li>
+              <p>
+                Tuve la oportunidad de jugar al Resident Evil 4 y debo decir que
+                fue una experiencia increíblemente emocionante. La trama es
+                apasionante, con personajes bien desarrollados y una
+                ambientación que realmente te mantiene en tensión. Los controles
+                son precisos y la jugabilidad es realmente adictiva. También me
+                encantó el nivel de dificultad, lo que hizo que cada logro se
+                sintiera aún más gratificante. En general, definitivamente
+                recomendaría este juego a cualquier fanático de los juegos de
+                terror y supervivencia
+              </p>
+            </li>
+          </ul>
         </section>
-        <section class="container-fluid">
-          <hr>
-          <section class="container mb-5">
-            <form class="row" id="formInputItem">
-              <label for="item">Comentanos tu opinión de este juego: ⬇</label>
-              <div class="col-md-10 my-2 m-md-0">
-                <input type="text" class="form-control" id="item" minlength="3" maxlength="100" required>
-              </div>
-              <div class="col-md-2">
-                <button type="submit" class="btn btn-primary w-100">Agregar</button>
-              </div>
-            </form>
-            <h3 class="text-center">Comentarios de jugadores </h3>
-            <ul><li><p>Tuve la oportunidad de jugar al Resident Evil 4 y debo decir que fue una experiencia increíblemente emocionante. La trama es apasionante, con personajes bien desarrollados y una ambientación que realmente te mantiene en tensión. Los controles son precisos y la jugabilidad es realmente adictiva. También me encantó el nivel de dificultad, lo que hizo que cada logro se sintiera aún más gratificante. En general, definitivamente recomendaría este juego a cualquier fanático de los juegos de terror y supervivencia</p></li></ul>
-          </section>
-          <article class="container" id="contenedorLista">
-          </article>
-        </section>
+        <article class="container" id="contenedorLista"></article>
+      </section>
     </main>
     <footer class="bg-black text-bg-dark pt-4">
       <section class="container-fluid text-center justify-content-between">
         <article class="row text-info">
           <aside class="col-12 col-md-4 col-lg-4 mb-2">
-            <img class="w-50" src="../img/rollingfoot.png" alt="footer rolling" />
+            <img
+              class="w-50"
+              src="../img/rollingfoot.png"
+              alt="footer rolling"
+            />
           </aside>
           <aside class="col-12 col-md-4 col-lg-4 mb-2">
             <h5>Preguntas? Llama al 0800 666 3331</h5>
