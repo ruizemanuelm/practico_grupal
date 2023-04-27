@@ -4,7 +4,7 @@ function cerrarModal(){
     modal.close()
     //con el metodo close podes cerrar hasta con esc
 }
-setInterval(() => {
+setTimeout(() => {
     modal.showModal()
 }, 6000);
 
