@@ -1,51 +1,49 @@
-const contenedorLista = document.getElementById('contenedorLista');
+// Obtener el formulario y el campo de comentario de la página
 const formInputItem = document.getElementById('formInputItem');
-let item = document.getElementById('item');
-let listaDeItems = [];
-formInputItem.addEventListener('submit', agregarItem);
+const item = document.getElementById('item');
 
-// Cargar la lista de elementos al cargar la página
+// Obtener el nombre de la página actual
+const currentPage = window.location.pathname.split('/').pop().split('.')[0];
+
+// Obtener la lista de comentarios de LocalStorage o inicializarla como un array vacío
+let comments = JSON.parse(localStorage.getItem(currentPage)) || [];
+
+// Cargar los comentarios existentes al cargar la página
 window.onload = function() {
-    cargarLista();
-}
-
-function agregarItem(e){
-    e.preventDefault();
-    listaDeItems.push(item.value);
-    formInputItem.reset();
     mostrarLista();
-    
-    // Guardar la lista de elementos en localStorage
-    localStorage.setItem('listaDeItems', JSON.stringify(listaDeItems));
 }
 
+// Agregar un evento de escucha para el formulario de comentario
+formInputItem.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Agregar el comentario a la lista de comentarios
+    comments.push(item.value);
+    formInputItem.reset();
+    
+    // Guardar la lista de comentarios en LocalStorage
+    localStorage.setItem(currentPage, JSON.stringify(comments));
+    
+    // Mostrar la lista de comentarios actualizada
+    mostrarLista();
+});
+
+// Función para mostrar la lista de comentarios
 function mostrarLista(){
+    const contenedorLista = document.getElementById('contenedorLista');
     contenedorLista.innerHTML = '';
+    
+    // Crear una lista no ordenada y agregar cada comentario como un elemento de lista
     const lista = document.createElement('ul');
     contenedorLista.appendChild(lista);
-    listaDeItems.forEach(function (item,index) {
+    comments.forEach(function(comment) {
         const li = document.createElement('li');
-        li.textContent = item;
-        lista.appendChild(li).innerHTML;
+        const p = document.createElement('p');
+        p.textContent = comment;
+        li.appendChild(p);
+        lista.appendChild(li);
     });
 }
 
-function eliminar (index){
-    let bandera = confirm(`Seguro desea eliminar el item: ${listaDeItems[index]}?`);
-    if(bandera === true){
-        listaDeItems.splice(index,1);
-        mostrarLista();
-        
-        // Actualizar la lista de elementos en localStorage después de eliminar un ítem
-        localStorage.setItem('listaDeItems', JSON.stringify(listaDeItems));
-    }
-}
 
-function cargarLista() {
-    // Cargar la lista de elementos de localStorage
-    if (localStorage.getItem('listaDeItems')) {
-        listaDeItems = JSON.parse(localStorage.getItem('listaDeItems'));
-        mostrarLista();
-    }
-}
  
