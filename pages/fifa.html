@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="juegos,pc,games" />
+    <meta
+      name="description"
+      content="Trabajo practico con ejercicios de javascript"
+    />
+    <meta name="author" content="Grupo Rolling Nashe" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Fifa 23</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar bg-black">
+        <div class="container-fluid">
+          <a href="../index.html" class="navbar-brand text-info fs-3"
+            >Rolling game</a
+          >
+          <form class="d-flex" role="search">
+            <input
+              class="form-control pe-4 me-2"
+              type="search"
+              placeholder="Super Mario Bros"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="container mt-2">
+      <dialog id="modal" class="text-center">
+        <h3 class="text-center">EMPEZA HOY! NO PIERDAS TIEMPO</h3>
+        <a href="https://rollingcode.co/"
+          ><img
+            src="/img/anuncioRolling.png"
+            width="400px"
+            alt="anuncioRolling"
+          />
+        </a>
+        <br />
+        <button type="button" class="my-3" id="btnCerrar">cerrar</button>
+      </dialog>
+      <section class="row">
+        <div class=" object-fit-cover">
+            <img src="../img/portada-fifa.jpg" class="d-block w-100" alt="...">
+          </div>
+        <aside class="col-md-12 col-lg-6 col-12">
+            <h3 class="card-title mt-3">Fifa 23</h3>
+            <p class="card-text">
+              FIFA 23 es un videojuego de simulación de fútbol publicado por
+              Electronic Arts. Es la trigésima entrega de la serie FIFA
+              desarrollada por EA Sports, y la última entrega bajo el estandarte
+              de FIFA, y lanzada en todo el mundo el 30 de septiembre de 2022
+              para PC, Nintendo Switch, PlayStation 4, PlayStation 5, Xbox One,
+              Xbox Series X/S y Google Stadia.
+            </p>
+        </aside>
+        <aside class="card-body col-md-12 col-lg-5 ms-lg-4 col-12">
+        <h3 class="card-title mt-3">Jugabilidad:</h3>
+          <p class="card-text">
+            Experimenta la innovadora tecnología de juego de próxima generación,
+            HyperMotion* y disfruta del Cross-Play en consolas de la misma
+            generación. FIFA 23 también cuenta con una nueva mecánica de tiro de
+            riesgo vs. recompensa, además de tiros libres, penales y tiros de
+            esquina renovados. Experiencia del día del partido Vive una
+            experiencia mejorada del día del partido en PS5 con repeticiones de
+            transmisión de realidad aumentada, superficies de cancha
+            hiperrealistas y atmósferas de estadio mejoradas.
+          </p>
+          <p>Precio: $37.699</p>
+          <button type="button" class="btn btn-outline-info">Comprar</button>
+        </aside>
+      </section>
+      <section class="container-fluid">
+        <hr />
+        <section class="container mb-5">
+          <form class="row" id="formInputItem">
+            <label for="item">Comentanos tu opinión de este juego: ⬇</label>
+            <div class="col-md-10 my-2 m-md-0">
+              <input
+                type="text"
+                class="form-control"
+                id="item"
+                minlength="3"
+                maxlength="100"
+                required
+              />
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <button type="submit" class="btn btn-info w-100">
+                comentar
+              </button>
+            </div>
+          </form>
+          <h3 class="text-center border-bottom border-info p-2">Comentarios de jugadores</h3>
+          <ul>
+            <li>
+              <p>
+                ¡Acabo de jugarlo y tengo que decir que es impresionante! Los
+                gráficos son increíbles y la jugabilidad es fluida y realista.
+                Los nuevos modos de juego agregan más emoción y desafío, y la
+                personalización de los equipos es una gran adición. Sin duda,
+                este es uno de los mejores juegos de fútbol que he jugado hasta
+                ahora y ya estoy emocionado de volver a jugarlo.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <article class="container" id="contenedorLista"></article>
+      </section>
+    </main>
+    <footer class="bg-black text-bg-dark pt-4">
+      <section class="container-fluid text-center justify-content-between">
+        <article class="row text-info">
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <img
+              class="w-50"
+              src="../img/rollingfoot.png"
+              alt="footer rolling"
+            />
+          </aside>
+          <aside class="col-12 col-md-4 col-lg-4 mb-2">
+            <h5>Preguntas? Llama al 0800 666 3331</h5>
+            <div class="d-flex justify-content-around mt-4">
+              <a href="/img/404Notfund.gif" class="text-info fs-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+
+              <a href="/img/404Notfund.gif" class="text-info fs-2 mx-1">
+                <i class="bi bi-twitter"></i
+              ></a>
+
+              <a href="/img/404Notfund.gif" class="text-info fs-2">
+                <i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-12 col-md-4 col-lg- mb-2">
+            <h5>Por mas consultas</h5>
+            <a
+              href="./pages/acercaDeNosotros.html"
+              class="fw-bold text-secondary fs-4"
+              >Acerca de nosotros</a
+            >
+          </aside>
+        </article>
+      </section>
+    </footer>
+    <script src="/js/publicidad.js"></script>
+    <script src="../js/comentarios.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
